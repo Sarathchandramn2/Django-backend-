@@ -47,5 +47,5 @@ class MovieView(APIView):
     def delete(self,request,pk=None):
         movie_to_delete =movie.objects.get(movieId=pk)
         movie_to_delete.delete()
-        return JsonResponse("student deleted succesfully",safe=False)
+        return JsonResponse("Movie deleted succesfully",safe=False)
     
